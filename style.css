@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: #f0f0ef;
+    color: #0f141e;
+}
+
+.container {
+    margin: auto;
+    max-width: 750px;
+    padding-top: 30px;
+}
+
+@media (max-width: 650px) {
+    .info {
+        /* Картинка не вставала над текстом, помог GPT */
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left:0;
+    }
+
+    .info-text {
+        /* Не получается никак убрать маржин 40 */
+        margin: 0;
+        align-self: auto;
+    }   
+}
+
+.avatar {
+    border-radius: 25px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    width: 200px;
+   
+    /* Добавила сама высоту и флекс, тк картинка сжималась в ширину при флексе */
+    height: 200px;
+    /* flex:none; */
+
+    margin-top: 40px;
+}
+
+a {
+    color: maroon;
+    text-decoration:none;
+}
+
+
+a:hover {
+    color: orangered;
+}
+
+a:active {
+    color: #333;
+}
+
+a:visited {
+    color: purple;
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text p {
+    font-style: italic;
+    font-weight: normal;
+    color: #5b5858;
+    margin: 40;
+}
+
+.info-text h4 {
+    margin-bottom: 5px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.bg-purple {
+    background: rgb(225, 217, 228);
+}
+
+.bg-blue {
+    background: rgb(203, 218, 237);
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+}
+
+.table td {
+    padding: 8px;
+}
+
+.table td:nth-child(2), .table td:nth-child(3){
+    color: #777777;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #777777;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+    width: 50%;
+}
+
+.form-row .form-group {
+    /* display: inline-block; */
+    margin-right: 20px;
+    /* width: calc(50%-15px) */
+}
+
+@media (max-width: 650px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid#ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.btn {
+    background: gray;
+    color: #fff;
+    padding: 7px 12px;
+    border: 0;
+    border-radius: 7px;
+}
